@@ -1,0 +1,122 @@
+﻿/* Estilo general de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeff2;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal del formulario */
+form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+h2 {
+    color: #4a90e2;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Estilo del DropDownList */
+asp\\:DropDownList {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    background-color: #f9fafb;
+    margin-bottom: 20px;
+}
+
+/* Estilo del GridView */
+asp\\:GridView {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    overflow-x: auto;
+}
+
+    /* Encabezado del GridView */
+    asp\\:GridView th {
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 12px;
+        border-bottom: 2px solid #ccc;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    /* Celdas del GridView */
+    asp\\:GridView td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* Filas alternas para el GridView */
+    asp\\:GridView tr:nth-child(even) {
+        background-color: #f3f4f6;
+    }
+
+/* Botones del GridView (Editar y Eliminar) */
+asp\\:CommandField button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    asp\\:CommandField button:hover {
+        background-color: #ff4c4c;
+    }
+
+/* Estilo del TextBox */
+asp\\:TextBox {
+    width: calc(100% - 110px);
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f9fafb;
+}
+
+/* Botón para agregar detalle */
+asp\\:Button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+    asp\\:Button:hover {
+        background-color: #357ab8;
+    }
+
+/* Espacio entre cada elemento del formulario */
+form > div,
+form > h2 {
+    margin-bottom: 20px;
+}
+
+/* Efecto hover para filas del GridView */
+asp\\:GridView tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.2s;
+}
